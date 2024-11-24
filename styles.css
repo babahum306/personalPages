@@ -10,7 +10,7 @@
 .jumbotron-fade {
     position: absolute;
     right: 0;
-    height: 100%;
+    height: auto;
     width: auto; /* Maintain aspect ratio */
     object-fit: cover;
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
