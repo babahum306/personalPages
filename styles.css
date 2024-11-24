@@ -38,3 +38,8 @@
     position: relative;
     z-index: 2;
   }
+
+  .jumbotron {
+    position: relative;
+    overflow: hidden;
+  }
