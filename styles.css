@@ -22,14 +22,14 @@
     background-color: transparent;
   }
 
-.jumbotronSunda {
-    background-image: url(../personalPages/res/gedungSate1114.png);
-    -webkit-mask-image: linear-gradient(to right, );
-    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
-    background-color: transparent;
-}
+.jumbotronSunda-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%; /* Adjust as needed */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), 
+                url('../personalPages/res/gedungSate1114.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
