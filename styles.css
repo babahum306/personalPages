@@ -1,1 +1,8 @@
-/*deprecated*/
+@font-face {
+    font-family: notoSansSundanese;
+    src: url(../personalPages/res/Noto_Sans_Sundanese/static/NotoSansSundanese-Regular.ttf);
+}
+
+.aksara {
+    font-family: 'notoSansSundanese';
+}
