@@ -21,3 +21,15 @@
     mask-size: 100%;
     background-color: transparent;
   }
+
+.jumbotronSunda {
+    background-image: url(../personalPages/res/gedungSate1114.png);
+    -webkit-mask-image: linear-gradient(to right, );
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    background-color: transparent;
+}
