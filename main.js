@@ -64,3 +64,7 @@ else if (tc == 'light') {
 }
 
 }
+
+function AbsenRandom() {
+   document.getElementById('h2randomized').innerHTML(Math.floor(Math.random() * 36) + 1);
+}
