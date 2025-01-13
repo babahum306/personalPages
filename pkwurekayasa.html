@@ -8,7 +8,7 @@
         <link href="../../../personalPages/styles.css" rel="stylesheet">
     </head>
     <body onload="javascript:defaultLoad()" data-bs-theme="dark">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar-spy">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">PKWU Rekayasa</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                     <a class="nav-link" aria-current="page" href="#scrollHeading3">Isi</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#scrollHeading4">Isi</a>
+                    <a class="nav-link" aria-current="page" href="#scrollHeading4">Ruang Lingkup</a>
                   </li>
                   </li>
 <!--                <li class="nav-item dropdown">
@@ -42,6 +42,7 @@
               </div>
             </div>
           </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
           <div class="container py-5">
             <div class="card mb-3" style="max-width:1114px">
                 <img src="../personalPages/res/engineering.jpg" class="card-img-top" alt="..." style="max-height: 626px; max-width:1114px;">
@@ -79,7 +80,7 @@
                 </blockquote>
               </div>
               <br>
-              <div class="card-header" id="ScrollHeading4">
+              <div class="card-header" id="scrollHeading4">
                 Ruang Lingkup PKWU Rekayasa
               </div>
               <br>
@@ -256,6 +257,7 @@
                 </div>
               </div> -->
             </div>
+          </div>
           </div> 
     </body>
 </html>
