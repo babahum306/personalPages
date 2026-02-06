@@ -71,7 +71,7 @@ backdrop-filter: blur(24px) saturate(120%);
   position: relative;
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  border-radius: 0% !important;
+  border-radius: 9999px !important;
   backdrop-filter: blur(10px) saturate(140%);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
 
