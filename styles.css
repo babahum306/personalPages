@@ -67,4 +67,55 @@ backdrop-filter: blur(24px) saturate(120%);
   -webkit-backdrop-filter: blur(32px) saturate(120%);
 }
 
+.btn-acrylic {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+
+  transition:
+    bg 0.2s ease,
+    border 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-acrylic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/noise.png");
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.btn-acrylic:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.btn-acrylic:active {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.btn-acrylic:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.6);
+}
+
+.btn-acrylic-primary {
+  background: rgba(0, 120, 212, 0.75);
+  border-color: rgba(0, 120, 212, 0.9);
+}
+
+.btn-acrylic-primary:hover {
+  background: rgba(0, 120, 212, 0.9);
+}
 
