@@ -24,7 +24,7 @@
 
 /* ===== Bootstrap dark acrylic card fix ===== */
 [data-bs-theme="dark"] .navbar {
-  background-color: rgba(46, 52, 68, 0.65) !important;
+  background-color: rgba(38, 43, 56, 0.7)!important;
   backdrop-filter: blur(24px) saturate(120%);
   -webkit-backdrop-filter: blur(16px);
 }
@@ -69,12 +69,12 @@ backdrop-filter: blur(24px) saturate(120%);
 
 .btn-acrylic {
   position: relative;
-  background: rgba(255, 255, 255, 0.08);
+   background-color: rgba(58, 64, 82, 0.65);
   color: #fff;
   backdrop-filter: blur(10px) saturate(140%);
   -webkit-backdrop-filter: blur(10px) saturate(140%);
 
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
   border-radius: 9999px;
 
   transition:
