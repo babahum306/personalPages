@@ -118,3 +118,21 @@ backdrop-filter: blur(24px) saturate(120%);
   background: rgba(0, 120, 212, 0.9);
 }
 
+.acrylic-table {
+  background-color: rgba(46, 52, 68, 0.6);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.22);
+  overflow: hidden;
+}
+
+.acrylic-table .table,
+.acrylic-table thead,
+.acrylic-table tbody,
+.acrylic-table tr,
+.acrylic-table th,
+.acrylic-table td {
+  background-color: transparent !important;
+}
