@@ -1,0 +1,189 @@
+@font-face {
+    font-family: notoSansSundanese;
+    src: url(../personalPages/res/Noto_Sans_Sundanese/static/NotoSansSundanese-Regular.ttf);
+}
+
+.aksara {
+    font-family: 'notoSansSundanese';
+}
+
+/* ============================= */
+/* Fluent / Acrylic UI effects  */
+/* ============================= */
+.acrylic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/noise.png");
+  opacity: 0.06; /* try 0.07 if still subtle */
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+
+
+/* ===== Bootstrap dark acrylic card fix ===== */
+[data-bs-theme="dark"] .navbar {
+  background-color: rgba(38, 43, 56, 0.7)!important;
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body[data-bs-theme="dark"] {
+  background: linear-gradient(
+  135deg,
+  #1E212B 0%,
+  #252A38 60%,
+  #14161D 100%
+);
+  min-height: 100vh;
+}
+
+.acrylic-dark {
+background-color: rgba(46, 52, 68, 0.65);
+backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-bs-theme="dark"] .card.acrylic-dark {
+  background-color: rgba(46, 52, 68, 0.65);
+  backdrop-filter: blur(24px) saturate(120%);
+
+}
+
+.bg-body-secondary {
+  position: relative;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(30, 33, 43, 0.78) 0%,
+      rgba(23, 25, 35, 0.82) 100%
+    );
+  backdrop-filter: blur(32px) saturate(120%);
+  -webkit-backdrop-filter: blur(32px) saturate(120%);
+}
+
+.btn-acrylic {
+  position: relative;
+   background-color: rgba(58, 64, 82, 0.65);
+  color: #fff;
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 9999px;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-acrylic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.85'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.btn-acrylic:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+    box-shadow:
+    0 0 18px rgba(255, 255, 255, 0.25),   /* outer soft glow */
+    0 10px 28px rgba(0, 0, 0, 0.35);      /* depth shadow */
+}
+
+.btn-acrylic:active {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.btn-acrylic:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.6);
+}
+
+.btn-acrylic-primary {
+  background: rgba(0, 120, 212, 0.75);
+  border-color: rgba(0, 120, 212, 0.9);
+}
+
+.btn-acrylic-primary:hover {
+  background: rgba(0, 120, 212, 0.9);
+}
+
+.acrylic-table {
+  background-color: rgba(46, 52, 68, 0.6);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.22);
+  overflow: hidden;
+}
+
+.acrylic-table .table,
+.acrylic-table thead,
+.acrylic-table tbody,
+.acrylic-table tr,
+.acrylic-table th,
+.acrylic-table td {
+  background-color: transparent !important;
+}
+
+.btn-acrylic-success {
+  position: relative;
+
+  background-color: rgba(25, 135, 84, 0.75);
+  color: #ffffff;
+
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 9999px;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-acrylic-success::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  opacity: 0.18;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.85'/%3E%3C/svg%3E");
+
+  mix-blend-mode: overlay;
+  border-radius: inherit;
+}
+
+.btn-acrylic-success:hover {
+  background-color: rgba(25, 135, 84, 0.9);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.btn-acrylic-success:active {
+  transform: scale(0.96);
+  background-color: rgba(25, 135, 84, 1);
+}
+
+.btn-acrylic-success:hover {
+  box-shadow:
+    0 0 16px rgba(25, 135, 84, 0.5),
+    0 10px 28px rgba(0, 0, 0, 0.35);
+}
